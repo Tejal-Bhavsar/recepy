@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
-}
+ .app{
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+    margin: 0px;
+    padding: 1em;
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+ .searchform{
+     display: flex;
+     justify-content: center;
+     margin-bottom: 5rem;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ .searchbar {
+     width: 30%;
+     height: 2.3rem;
+     border-radius: 15px;
+     border: none;
+     outline: none;
+ }
+ .search-btn {
+     color: #fff;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    border:none;
+    outline: none;
+    padding: 0.8em 2em;
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ .recepy{ 
+     background-color: #fff;
+     width: 400px;
+     color: gray;
+     border-radius: 25px;
+     padding: 0.8em;
+    
+ }
+ .recepy h1 {
+     color:black;
+     text-align: center;
+ }
+ .recepy img {
+     border-radius: 15px;
+     width: 390px;
+     box-shadow:
+      0 5px 10px rgba(0, 0, 0, 0.1),
+      0 20px 20px rgba(0, 0, 0, 0.05);
+     
+ }
+ .recepy:hover {
+    box-shadow: 0 10px 50px #bcc5d8;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ .card {
+     
+     display: grid;
+     grid-gap: 1rem;
+     grid-template-columns: repeat(auto-fit, minmax(350px,3fr));
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ .headline {
+     text-align: center;
+ }
