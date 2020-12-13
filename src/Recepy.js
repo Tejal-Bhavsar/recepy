@@ -6,7 +6,7 @@ export default function Recepy({title,calories,image,ingredients}) {
             <div className="recepy">
                 <h1>{title}</h1>
                 <img src={image} />
-                <h5>ingredients</h5>
+                <p>ingredients</p>
                 <ol>{ingredients.map(ingredient => 
                     (<li>{ingredient.text}</li>))}</ol>
                 <p>calories: {calories}</p>

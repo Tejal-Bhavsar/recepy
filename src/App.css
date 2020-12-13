@@ -1,3 +1,6 @@
+ html{
+     font-size: 62.5%;
+ }
  .app{
     background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
     margin: 0px;
@@ -11,8 +14,9 @@
  }
 
  .searchbar {
-     width: 30%;
-     height: 2.3rem;
+     width: 30em;
+     margin-top: 1em;
+     height: 3em;
      border-radius: 15px;
      border: none;
      outline: none;
@@ -28,7 +32,7 @@
 
  .recepy{ 
      background-color: #fff;
-     width: 400px;
+     
      color: gray;
      border-radius: 25px;
      padding: 0.8em;
@@ -40,7 +44,7 @@
  }
  .recepy img {
      border-radius: 15px;
-     width: 390px;
+      width: 100%;
      box-shadow:
       0 5px 10px rgba(0, 0, 0, 0.1),
       0 20px 20px rgba(0, 0, 0, 0.05);
@@ -53,10 +57,52 @@
  .card {
      
      display: grid;
-     grid-gap: 1rem;
-     grid-template-columns: repeat(auto-fit, minmax(350px,3fr));
+     grid-gap: 3rem;
+     grid-template-columns: repeat(auto-fill,  minmax(30.2em,2fr));
  }
 
  .headline {
      text-align: center;
  }
+
+ @media only screen and (max-width:375px){
+     html{
+         font-size: 35%;
+     }
+
+     .searchbar{
+         width: 13em;
+     }
+     .search-btn{
+         margin-top: 1em;
+         padding: 0.2em;
+     } .recepy img {
+         width: 100%;
+        /* width: 39em; */
+    }
+
+
+ }
+ @media only screen and (max-width:768px) and (min-width: 368px){
+    html{
+        font-size: 38%;
+    }
+
+    .searchbar{
+        width: 13em;
+    }
+    .search-btn{
+        padding: 0.5em;
+    }
+    .recepy img {
+        /* width: 40em; */
+    }
+}
+@media only screen and (max-width:998px) and (min-width:770px){
+    html{
+        font-size: 55%;
+    }
+    .search-btn{
+        padding: 0em 1em;
+    }
+}
